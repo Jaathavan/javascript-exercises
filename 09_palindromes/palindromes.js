@@ -1,9 +1,6 @@
 const palindromes = function (str) {
-    str.reduce((palindrome, currentLetter) => {
-        currentLetter.match(/[a-z]/i);
-    }, "")
-    return str.split("").reverse().join("");
-};
-
+    newString = str.toLowerCase().replace(/[^a-z]/g, "");
+    return newString.split("").reverse().join("") === newString;
+}
 // Do not edit below this line
 module.exports = palindromes;
