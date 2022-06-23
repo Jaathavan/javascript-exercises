@@ -1,5 +1,5 @@
 const palindromes = function (str) {
-    str.reduce((palindrome, currentLetter, currentIndex, str) => {
+    str.reduce((palindrome, currentLetter) => {
         currentLetter.match(/[a-z]/i);
     }, "")
     return str.split("").reverse().join("");
