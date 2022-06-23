@@ -1,8 +1,5 @@
 const getTheTitles = function(books) {
-    books.reduce((titles, title) => {
-        titles.append(books[title]);
-    }, []);
-    return titles;
+    return books.map(info => info.title);
 };
 
 // Do not edit below this line
